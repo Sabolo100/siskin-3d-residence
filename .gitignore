@@ -1,0 +1,24 @@
+node_modules/
+dist/
+
+# Build and TypeScript artifacts
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Local verification assets
+landing-check*.png
+mobile-check.png
+patches/
+
+# Temporary source copies
+src/main.complete.tsx
+tsconfig.node.complete.json
+
+# Local environment files
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
