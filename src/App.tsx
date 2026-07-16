@@ -192,9 +192,9 @@ function StorySheet({ mode, onMode, onClose }: { mode: StoryMode; onMode: (mode:
             <span className="section-index">{mode === 'project' ? '01' : '02'}</span>
             {mode === 'project' ? (
               <>
-                <span className="eyebrow">MADÁRHEGY RESIDENCE · KONCEPCIÓ</span>
+                <span className="eyebrow">BUDAI WALZER LAKÓPARK · KONCEPCIÓ</span>
                 <h2>A város ritmusa.<br /><em>A természet nyugalma.</em></h2>
-                <p>A Madárhegy Residence egy fiktív, prémium budai társasház koncepciója. Lágyan ívelt erkélyei követik a domboldal vonalát, a nagy üvegfelületek pedig minden otthonba közelebb hozzák a kertet és a fényt.</p>
+                <p>A Budai Walzer Lakópark egy fiktív, prémium budai társasház koncepciója. Lágyan ívelt erkélyei követik a domboldal vonalát, a nagy üvegfelületek pedig minden otthonba közelebb hozzák a kertet és a fényt.</p>
                 <div className="story-stats">
                   <div><strong>2028</strong><span>tervezett átadás</span></div>
                   <div><strong>48</strong><span>egyedi otthon</span></div>
@@ -212,7 +212,7 @@ function StorySheet({ mode, onMode, onClose }: { mode: StoryMode; onMode: (mode:
                 <h2>Minden közel.<br /><em>Ami igazán számít.</em></h2>
                 <p>A budai dombok lábánál, parkok és pezsgő városi terek metszéspontjában. Kerékpárral, villamossal és autóval is jól kapcsolódik a városhoz.</p>
                 <div className="location-list">
-                  <div><span className="location-dot lime"><Trees size={16} /></span><span><strong>Madárhegyi park</strong>2 perc séta</span><b>02'</b></div>
+                  <div><span className="location-dot lime"><Trees size={16} /></span><span><strong>Budai park</strong>2 perc séta</span><b>02'</b></div>
                   <div><span className="location-dot sage"><Clock3 size={16} /></span><span><strong>Kelenföld vasútállomás</strong>Kerékpárral</span><b>08'</b></div>
                   <div><span className="location-dot clay"><MapPin size={16} /></span><span><strong>Bikás park</strong>Tömegközlekedéssel</span><b>12'</b></div>
                   <div><span className="location-dot violet"><Building2 size={16} /></span><span><strong>Belváros</strong>Autóval</span><b>18'</b></div>
@@ -220,7 +220,7 @@ function StorySheet({ mode, onMode, onClose }: { mode: StoryMode; onMode: (mode:
                 <div className="map-sketch" aria-label="Sematikus környéktérkép">
                   <span className="road r1" /><span className="road r2" /><span className="road r3" />
                   <span className="map-river" />
-                  <span className="map-home"><i /> MADÁRHEGY<br />RESIDENCE</span>
+                  <span className="map-home"><i /> BUDAI WALZER<br />LAKÓPARK</span>
                   <span className="map-point p1">Kelenföld</span><span className="map-point p2">Bikás park</span>
                 </div>
               </>
@@ -243,7 +243,7 @@ function ContactSheet({ apartment, onClose }: { apartment: Apartment | null; onC
           <>
             <span className="eyebrow">KAPCSOLAT</span>
             <h2>Beszélgessünk<br />az új otthonodról.</h2>
-            <p>{apartment ? `A ${apartment.name} lakással kapcsolatban` : 'A Madárhegy Residence otthonaival kapcsolatban'} munkatársunk egy munkanapon belül felveszi veled a kapcsolatot.</p>
+            <p>{apartment ? `A ${apartment.name} lakással kapcsolatban` : 'A Budai Walzer Lakópark otthonaival kapcsolatban'} munkatársunk egy munkanapon belül felveszi veled a kapcsolatot.</p>
             <form onSubmit={(event) => { event.preventDefault(); setSent(true) }}>
               <label>Név<input required placeholder="Teljes név" /></label>
               <div className="form-row">
@@ -331,7 +331,7 @@ export default function App() {
 
           <div className="project-intro">
             <span className="eyebrow">BUDAPEST · XI. KERÜLET</span>
-            <h1>Madárhegy<br /><em>Residence</em></h1>
+            <h1>Budai Walzer<br /><em>Lakópark</em></h1>
             <div className="intro-meta"><span>48 otthon</span><i /><span>2028</span><i /><span>AA++</span></div>
           </div>
 
@@ -364,7 +364,7 @@ export default function App() {
           <div className="inventory-mobile-head"><Brand /><button className="icon-button" onClick={() => setInventoryMobileOpen(false)}><X size={19} /></button></div>
           <header className="inventory-header">
             <div>
-              <span className="eyebrow">MADÁRHEGY RESIDENCE</span>
+              <span className="eyebrow">BUDAI WALZER LAKÓPARK</span>
               <h2>Elérhető otthonok <b>{filteredApartments.length}</b></h2>
             </div>
             <button className="mini-filter"><Minus size={14} /><Plus size={14} /></button>

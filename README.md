@@ -1,4 +1,4 @@
-# SISKIN — Madárhegy Residence
+# SISKIN — Budai Walzer Lakópark
 
 Interaktív, reszponzív 3D ingatlanbemutató koncepció egy fiktív budapesti társasházhoz.
 
